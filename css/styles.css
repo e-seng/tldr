@@ -2,34 +2,63 @@
     font-family: "Libre Baskerville", serif;
     font-family: "Roboto", serif;
     font-size: 16px;
+    background-color: white;
 }
 
 html{
     scroll-behavior: smooth;
 }
 
+body{
+    height:100%;
+    width:100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
 .navbar{
-    height: 5rem;
+    margin: 0;
+    height: 6.5rem;
+    width: 100vw;
+
     font-family: "Libre Baskerville", serif;
     display: flex;
+    position: fixed;
+    border-bottom: dotted 3px #888888;
+    background-color: whitesmoke;
 }
 
-.logo, .logo a:link, .logo a:active, .logo a:visited{
-    border: solid 5px #333333;
+.navitem{
+    list-style: none;
+    margin-right: 5rem;
+    display: inline-block
+}
+
+.navlink, .navlink a:link, .navlink a:active, .navlink a:visited{
+    margin-top: auto;
+    margin-bottom: auto;
+
+    display: inline-block;
+    text-decoration: none;
+    color: #888888;
+}
+
+.navlink a:hover{
+    text-decoration: underline;
+}
+
+.logo{
+    border: solid 4px #888888;
     height: 4rem;
     width: 4rem;
-    display: inline-block;
+    border-radius: 5%;
     text-align: center;
-    text-decoration: underline;
-    color: #333333;
+    margin-right: 0;
 }
 
-.logo a:hover{
-    text-decoration:underline;
-    color: #000000;
-}
 
+/* Main Content */
 .main{
-    margin-top: 5rem;
-    height: 95rem;
+    padding-top: 6.5rem;
 }
