@@ -70,10 +70,9 @@ body{
     margin: 0;
     padding: 0;
 }
-
+/* The title page */
 .title{
     font-family: "Libre Baskerville", serif;
-    font-size: 72px;
     text-align: center;
 
     display: flex;
@@ -83,6 +82,7 @@ body{
 .title h1{
     margin: 0;
     margin-top: 30vh;
+    font-size: 12rem;
 }
 
 .blink{
