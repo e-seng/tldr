@@ -26,10 +26,22 @@ function getIndex(response){
     })
 }
 
+function getStyles(response){
+    fs.readFile("./css/styles.css", function(err, data){
+        response.writeHead(200, {"ContentType" : "text/css"});
+        response.write(data);
+        response.end();
+    });
+}
+
 function onRequest(request, response){
     console.log("Request: {0} {1}".format(request.method, request.url));
     if(request.method == "GET" && (request.url == "/" || request.url == "/index.html")){
         getIndex(response);
+    }else if(request.method == "GET" && request.url == "/css/styles.css"){
+        getStyles(response);
+    }else{
+        error404(response);
     }
 }
 
