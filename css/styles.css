@@ -1,3 +1,35 @@
 :root{
+    font-family: "Libre Baskerville", serif;
     font-family: "Roboto", serif;
+    font-size: 16px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    height: 5rem;
+    font-family: "Libre Baskerville", serif;
+    display: flex;
+}
+
+.logo, .logo a:link, .logo a:active, .logo a:visited{
+    border: solid 5px #333333;
+    height: 4rem;
+    width: 4rem;
+    display: inline-block;
+    text-align: center;
+    text-decoration: underline;
+    color: #333333;
+}
+
+.logo a:hover{
+    text-decoration:underline;
+    color: #000000;
+}
+
+.main{
+    margin-top: 5rem;
+    height: 95rem;
 }
