@@ -72,6 +72,7 @@ body{
     padding: 0;
     padding-top: 6.5rem;
 }
+
 /* The title page */
 .title{
     font-family: "Libre Baskerville", serif;
@@ -111,6 +112,20 @@ body{
     grid-template-rows: 1fr;
 }
 
+/* Demo controls */
+.about_controls{
+    grid-column: 1;
+
+    margin: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    height: 20rem;
+    width: 40%;
+    background: #efefef;
+}
+
+/* About blurb */
 ins.important{
     text-decoration: none;
 }
