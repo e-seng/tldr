@@ -135,6 +135,10 @@ body{
     padding: 0;
 }
 
+.focus_level{
+    margin: auto;
+}
+
 .focus_level a, .focus_level a:active, .focus_level a:visited{
     margin: auto;
 
@@ -153,7 +157,7 @@ body{
 
 .focus_level a::before{
     content: "";
-
+    text-align: center;
     align-self: center;
     display: block;
 
