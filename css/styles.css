@@ -114,7 +114,7 @@ body{
     text-decoration: none;
 }
 
-.about_box{
+.about_text{
     grid-column: 2;
     padding-right: 20%;
     margin-top: auto;
