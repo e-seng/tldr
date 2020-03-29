@@ -22,6 +22,7 @@ body{
     margin: 0;
     height: 6.5rem;
     width: 100vw;
+    z-index: 42;
 
     font-family: "Libre Baskerville", serif;
     display: flex;
@@ -110,7 +111,7 @@ body{
     grid-template-rows: 1fr;
 }
 
-.about_box ins{
+ins.important{
     text-decoration: none;
 }
 
