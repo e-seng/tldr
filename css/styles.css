@@ -60,15 +60,16 @@ body{
 
 
 /* Main Content */
-.main{
+/*.main{
     padding-top: 6.5rem;
-}
+}*/
 
 .content{
     height: 90vh;
     width: 100%;
     margin: 0;
     padding: 0;
+    padding-top: 6.5rem;
 }
 /* The title page */
 .title{
@@ -99,4 +100,23 @@ body{
     50% {opacity: 1;}
     50.1% {opacity: 0;}
     100% {opacity: 0;}
+}
+
+/* About us */
+
+#about{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.about_box ins{
+    text-decoration: none;
+}
+
+.about_box{
+    grid-column: 2;
+    padding-right: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
