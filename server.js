@@ -34,12 +34,22 @@ function getStyles(response){
     });
 }
 
+function getDemoJS(response){
+    fs.readFile("./javascript/tldr_demo.js", function(err, data){
+        response.writeHead(200, {"ContentType" : "text/javascript"});
+        response.write(data);
+        response.end();
+    });
+}
+
 function onRequest(request, response){
     console.log("Request: {0} {1}".format(request.method, request.url));
     if(request.method == "GET" && (request.url == "/" || request.url == "/index.html")){
         getIndex(response);
     }else if(request.method == "GET" && request.url == "/css/styles.css"){
         getStyles(response);
+    }else if(request.method == "GET" && request.url == "/javascript/tldr_demo.js"){
+        getDemoJS(response);
     }else{
         error404(response);
     }
