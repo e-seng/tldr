@@ -123,6 +123,40 @@ body{
     height: 20rem;
     width: 40%;
     background: #efefef;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.focus_levels{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.focus_level{
+    margin: auto;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.focus_level:hover{
+    cursor: pointer;
+}
+
+.focus_level::before{
+    content: "";
+    align-self: center;
+    display: block;
+    border: solid #888888;
+    border-radius: 100px;
+    height: 16px;
+    width: 16px;
+}
+
+.active::before{
+    background-color: #888888;
 }
 
 /* About blurb */
