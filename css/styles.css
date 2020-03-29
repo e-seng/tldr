@@ -147,12 +147,16 @@ body{
 
 .focus_level::before{
     content: "";
+
     align-self: center;
     display: block;
+
     border: solid #888888;
     border-radius: 100px;
     height: 16px;
     width: 16px;
+
+    margin-bottom: 10%;
 }
 
 .active::before{
