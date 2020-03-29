@@ -131,21 +131,27 @@ body{
 .focus_levels{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    padding: 0;
 }
 
-.focus_level{
+.focus_level a, .focus_level a:active, .focus_level a:visited{
     margin: auto;
 
     text-align: center;
     display: flex;
     flex-direction: column;
+
+    color: #888888;
+    text-decoration: none;
 }
 
-.focus_level:hover{
+.focus_level a:hover{
     cursor: pointer;
+    text-decoration: underline;
 }
 
-.focus_level::before{
+.focus_level a::before{
     content: "";
 
     align-self: center;

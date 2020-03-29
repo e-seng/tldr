@@ -4,6 +4,7 @@
     <head>
         <link href="./css/styles.css" rel="stylesheet" type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet"> 
+        <script defer src="./javascript/tldr_demo.js"></script>
     </head>
     <body>
         <nav class="navbar">
@@ -35,11 +36,17 @@
             -->
             <div id="about" class="content">
                 <div class="about_controls">
-                    <div class="focus_levels">
-                        <div class="focus_level">Minimal</div>
-                        <div class="focus_level active">Some</div>
-                        <div class="focus_level">All</div>
-                    </div>
+                    <ul class="focus_levels">
+                        <li class="focus_level">
+                            <a id="minimal" href="#about">Minimal</a>
+                        </li>
+                        <li class="focus_level">
+                            <a id="some" class="active" href="#about">Some</a>
+                        </li>
+                        <li class="focus_level all">
+                            <a id="all" href="#about">All</a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="about_text">
                     <p>
