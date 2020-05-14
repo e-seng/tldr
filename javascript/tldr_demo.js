@@ -4,14 +4,17 @@ var minimalToggle = document.getElementById("minimal")
 
 highToggle.onclick = function(){
     toggleActive(2);
+    document.getElementById("about_text").classList = "";
 }
 
 someToggle.onclick = function(){
     toggleActive(1);
+    document.getElementById("about_text").classList = "important";
 }
 
 minimalToggle.onclick = function(){
     toggleActive(0);
+    document.getElementById("about_text").classList = "very important";
 }
 
 function toggleActive(buttonIndex){
