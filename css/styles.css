@@ -209,6 +209,7 @@ body{
     /* ie if the class was class="very important",
      ignore the important, not very important */
     color: var(--hidden-text);
+    transition: ease-in 1s;
 }
 
 #about_text.very .very{

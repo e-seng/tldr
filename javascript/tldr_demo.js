@@ -2,21 +2,34 @@ var highToggle = document.getElementById("all");
 var someToggle = document.getElementById("some");
 var minimalToggle = document.getElementById("minimal")
 
-highToggle.onclick = () => {
-    console.log("click!!");
-    if(!highToggle.classList.contains("active")) highToggle.classList.add("active");
-    if(someToggle.classList.contains("active")) someToggle.classList.remove("active");
-    if(minimalToggle.classList.contains("active")) minimalToggle.classList.remove("active");
+highToggle.onclick = function(){
+    toggleActive(2);
 }
 
-someToggle.onclick = () => {
-    if(highToggle.classList.contains("active")) highToggle.classList.remove("active");
-    if(!someToggle.classList.contains("active")) someToggle.classList.add("active");
-    if(minimalToggle.classList.contains("active")) minimalToggle.classList.remove("active");
+someToggle.onclick = function(){
+    toggleActive(1);
 }
 
-minimalToggle.onclick = () =>{
-    if(highToggle.classList.contains("active")) highToggle.classList.remove("active");
-    if(someToggle.classList.contains("active")) someToggle.classList.remove("active");
-    if(!minimalToggle.classList.contains("active")) minimalToggle.classList.add("active");
+minimalToggle.onclick = function(){
+    toggleActive(0);
+}
+
+function toggleActive(buttonIndex){
+    /**
+     * Toggles which button is active when a use interacts with the options.
+     * 
+     * @params {integer} buttonIndex 
+     *      The index to the button when getElementsByClassName is used
+     */
+    let aboutButtons = document.getElementsByClassName("about-button")
+
+    for(var button in aboutButtons){
+        if(typeof aboutButtons[button] !== "object") continue;
+        if(button == buttonIndex){
+            aboutButtons[button].classList.add("active");
+            continue;
+        }
+
+        aboutButtons[button].classList.remove("active");
+    }
 }
