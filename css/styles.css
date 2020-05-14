@@ -116,20 +116,18 @@ body{
 
 #about{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 }
 
 /* Demo controls */
 #about_controls{
     grid-column: 1;
+    display: block;
 
-    margin: 30%;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto 10%;
 
     height: 20rem;
-    width: 40%;
+    min-width: 300px;
     background: var(--tertiary-background);
 
     display: grid;
