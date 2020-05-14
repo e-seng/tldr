@@ -3,7 +3,12 @@
     font-family: "Roboto", serif;
     font-size: 16px;
     background-color: white;
-    color: #888888;
+    
+    --main-background: white;
+    --secondary-background: whitesmoke;
+    --tertiary-background: #efefef;
+    --main-colour: #888888;
+    --hidden-text: #aaaaaa;
 }
 
 html{
@@ -27,8 +32,8 @@ body{
     font-family: "Libre Baskerville", serif;
     display: flex;
     position: fixed;
-    border-bottom: dotted 3px #888888;
-    background-color: whitesmoke;
+    border-bottom: dotted 3px var(--main-colour);
+    background-color: var(--secondary-background);
 }
 
 .navitem{
@@ -43,7 +48,7 @@ body{
 
     display: inline-block;
     text-decoration: none;
-    color: #888888;
+    color: var(--main-colour);
 }
 
 .navitem a:hover{
@@ -51,7 +56,7 @@ body{
 }
 
 .logo{
-    border: solid 4px #888888;
+    border: solid 4px var(--main-colour);
     height: 4rem;
     width: 4rem;
     border-radius: 5%;
@@ -123,7 +128,7 @@ body{
 
     height: 20rem;
     width: 40%;
-    background: #efefef;
+    background: var(--tertiary-background);
 
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
@@ -150,7 +155,7 @@ body{
     display: flex;
     flex-direction: column;
 
-    color: #888888;
+    color: var(--main-colour);
     text-decoration: none;
 }
 
@@ -165,7 +170,7 @@ body{
     align-self: center;
     display: block;
 
-    border: solid #888888;
+    border: solid var(--main-colour);
     border-radius: 100px;
     height: 16px;
     width: 16px;
@@ -174,11 +179,11 @@ body{
 }
 
 .active::before{
-    background-color: #888888;
+    background-color: var(--main-colour);
 }
 
 /* About blurb */
-ins.important{
+#about ins.important{
     text-decoration: none;
 }
 
@@ -187,4 +192,8 @@ ins.important{
     padding-right: 20%;
     margin-top: auto;
     margin-bottom: auto;
+}
+
+#about.important p{
+    color: var(--hidden-text);
 }
