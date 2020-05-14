@@ -196,22 +196,29 @@ body{
     margin-bottom: auto;
 }
 
+#about_text p, #about_text ins{
+    color: var(--main-colour);
+    transition: ease-in 200ms;
+}
+
 #about_text.important p{
     color: var(--hidden-text);
-    transition: ease-in 1s;
+    transition: ease-in 300ms;
 }
 
 #about_text.important .important{
     color: var(--main-colour);
+    transition: ease-in 300ms;
 }
 
 #about_text.very p, #about_text.very .important{
     /* ie if the class was class="very important",
      ignore the important, not very important */
     color: var(--hidden-text);
-    transition: ease-in 1s;
+    transition: ease-in 300ms;
 }
 
 #about_text.very .very{
     color: var(--main-colour);
+    transition: ease-in 300ms;
 }
