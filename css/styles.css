@@ -137,6 +137,9 @@ body{
 
 .focus_level{
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .focus_level a, .focus_level a:active, .focus_level a:visited{
