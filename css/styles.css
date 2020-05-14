@@ -8,7 +8,7 @@
     --secondary-background: whitesmoke;
     --tertiary-background: #efefef;
     --main-colour: #888888;
-    --hidden-text: #aaaaaa;
+    --hidden-text: #dddddd;
 
     color: var(--main-colour);
 }
@@ -189,13 +189,28 @@ body{
     text-decoration: none;
 }
 
-.about_text{
+#about_text{
     grid-column: 2;
     padding-right: 20%;
     margin-top: auto;
     margin-bottom: auto;
 }
 
-#about.important p{
+#about_text.important p{
     color: var(--hidden-text);
+    transition: ease-in 1s;
+}
+
+#about_text.important .important{
+    color: var(--main-colour);
+}
+
+#about_text.very p, #about_text.very .important{
+    /* ie if the class was class="very important",
+     ignore the important, not very important */
+    color: var(--hidden-text);
+}
+
+#about_text.very .very{
+    color: var(--main-colour);
 }
