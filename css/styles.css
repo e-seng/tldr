@@ -121,7 +121,7 @@ body{
 }
 
 /* Demo controls */
-.about_controls{
+#about_controls{
     grid-column: 1;
 
     margin: 30%;
