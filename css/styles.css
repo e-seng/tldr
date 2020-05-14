@@ -9,6 +9,8 @@
     --tertiary-background: #efefef;
     --main-colour: #888888;
     --hidden-text: #aaaaaa;
+
+    color: var(--main-colour);
 }
 
 html{
