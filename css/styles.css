@@ -227,3 +227,7 @@ body{
     color: var(--main-colour);
     transition: ease-in 300ms;
 }
+
+#about_text.hover p:hover, #about_text.hover p:hover .important{
+    color: var(--main-colour);
+}
