@@ -41,7 +41,7 @@ function init(){
 
         for(var button in aboutButtons){
             if(typeof aboutButtons[button] !== "object") continue;
-            if(button === buttonIndex){
+            if(Number(button) === buttonIndex){
                 aboutButtons[button].classList.add("active");
                 continue;
             }
