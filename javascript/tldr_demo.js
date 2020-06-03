@@ -17,17 +17,18 @@ function init(){
 
     highToggle.onclick = function(){
         toggleActive(2);
-        document.getElementById("about_text").classList = "";
+        document.getElementById("about_text").classList.remove("very", "important");
     }
 
     someToggle.onclick = function(){
         toggleActive(1);
-        document.getElementById("about_text").classList = "important";
+        document.getElementById("about_text").classList.add("important");
+        document.getElementById("about_text").classList.remove("very");
     }
 
     minimalToggle.onclick = function(){
         toggleActive(0);
-        document.getElementById("about_text").classList = "very important";
+        document.getElementById("about_text").classList.add("very", "important");
     }
 
     /**
@@ -49,6 +50,18 @@ function init(){
             aboutButtons[button].classList.remove("active");
         }
     }
+
+    var hoverContextToggle = document.querySelector("#view-options #show-context input");
+    hoverContextToggle.addEventListener("click", function(){
+        let aboutText = document.getElementById("about_text");
+        console.log(aboutText);
+
+        if(hoverContextToggle.checked){
+            aboutText.classList.add("hover");
+            return;
+        }
+        aboutText.classList.remove("hover");
+    });
 }
 
 window.addEventListener("load", init);
