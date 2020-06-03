@@ -13,14 +13,14 @@ String.prototype.format = function(){
 }
 
 function error404(response){
-    response.writeHead(404, {"ContentType" : "text/plain"});
+    response.writeHead(404, {"Content-Type" : "text/plain"});
     response.write("Whoops, the page you were looking for cannot be found");
     response.end();
 }
 
 function getIndex(response){
     fs.readFile("./index.html", function(error, data){
-        response.writeHead(200, {"ContentType" : "text/html"});
+        response.writeHead(200, {"Content-Type" : "text/html"});
         response.write(data);
         response.end();
     })
@@ -28,7 +28,7 @@ function getIndex(response){
 
 function getStyles(response){
     fs.readFile("./css/styles.css", function(err, data){
-        response.writeHead(200, {"ContentType" : "text/css"});
+        response.writeHead(200, {"Content-Type" : "text/css"});
         response.write(data);
         response.end();
     });
@@ -36,7 +36,7 @@ function getStyles(response){
 
 function getDemoJS(response){
     fs.readFile("./javascript/tldr_demo.js", function(err, data){
-        response.writeHead(200, {"ContentType" : "text/javascript"});
+        response.writeHead(200, {"Content-Type" : "application/javascript"});
         response.write(data);
         response.end();
     });
