@@ -277,7 +277,7 @@ body{
     left: .25rem;
     bottom: .0rem;
     background-color: var(--hidden-text);
-    transition: 1s;
+    transition: background-color 500ms, transform 1s;
 }
 
 #view-options input:checked + .toggle-switch{
