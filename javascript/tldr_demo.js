@@ -17,13 +17,13 @@ minimalToggle.onclick = function(){
     document.getElementById("about_text").classList = "very important";
 }
 
+/**
+ * Toggles which button is active when a use interacts with the options.
+ * 
+ * @param {number} buttonIndex 
+ *      The index to the button when getElementsByClassName is used
+ */
 function toggleActive(buttonIndex){
-    /**
-     * Toggles which button is active when a use interacts with the options.
-     * 
-     * @params {integer} buttonIndex 
-     *      The index to the button when getElementsByClassName is used
-     */
     let aboutButtons = document.getElementsByClassName("about-button")
 
     for(var button in aboutButtons){
