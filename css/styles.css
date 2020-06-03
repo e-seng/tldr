@@ -109,6 +109,7 @@ body{
     font-weight: 50;
     text-decoration: none;
     color: #000000;
+    font-size: 12rem;
 }
 
 @keyframes blink{
