@@ -1,3 +1,15 @@
+/**
+ * The javascript needed to create the effects on the website tl;dr.
+ * 
+ * Do note, the website itself is not functional to what it is advertising. It is
+ * merely a mock-up website to show a possible app.
+ * 
+ * If there is a demand for this type of website to be developed, please contact
+ * me though email, eth.sengsavang@gmail.com, or on twitter, @potatoPetiole.
+ * 
+ * @author Ethan Sengsavang
+ */
+
 function init(){
     var highToggle = document.getElementById("all");
     var someToggle = document.getElementById("some");
