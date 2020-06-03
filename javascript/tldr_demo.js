@@ -51,10 +51,17 @@ function init(){
         }
     }
 
+    /**
+     * Allow the Content Hover toggle to have functionality
+     */
     var hoverContextToggle = document.querySelector("#view-options #show-context input");
+     // Check if the toggle is already checked
+     if(hoverContextToggle.checked){
+        document.getElementById("about_text").classList.add("hover");
+    }
+
     hoverContextToggle.addEventListener("click", function(){
         let aboutText = document.getElementById("about_text");
-        console.log(aboutText);
 
         if(hoverContextToggle.checked){
             aboutText.classList.add("hover");

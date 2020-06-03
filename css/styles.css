@@ -229,6 +229,7 @@ body{
 
 #about_text.hover p:hover, #about_text.hover p:hover .important{
     color: var(--main-colour);
+    transition: 300ms;
 }
 
 #view-options{
